@@ -5,6 +5,8 @@ import (
 	"crypto/sha256"
 )
 
+const genesis = "Genesis"
+
 type block struct {
 	hash     []byte
 	data     []byte
@@ -24,5 +26,5 @@ func CreateBlock(data string, prevHash []byte) *block {
 }
 
 func GenesisBlock() *block {
-	return CreateBlock("Genesis", []byte{})
+	return CreateBlock(genesis, []byte{})
 }

@@ -5,7 +5,7 @@ type BlockChain struct {
 }
 
 func (chain *BlockChain) AddBlock(data string) {
-	block := CreateBlock(data, chain.blocks[len(chain.blocks)-1].prevHash)
+	block := CreateBlock(data, chain.blocks[len(chain.blocks)-1].hash)
 	chain.blocks = append(chain.blocks, block)
 }
 
