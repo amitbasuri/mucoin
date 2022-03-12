@@ -1,6 +1,8 @@
 package main
 
-import "mucoin"
+import (
+	"mucoin"
+)
 
 func main() {
 
